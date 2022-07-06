@@ -1,0 +1,14 @@
+@import "../abstract/variaveis";
+
+.main-button {
+  width: 200px;
+  height: 64px;
+  border: 0;
+  border-radius: 8px;
+  background-color: $primaryColor;
+  font-size: 18px;
+  font-weight: bold;
+  color: $textColor100;
+  margin-bottom: 90px;
+  display: block;
+}
