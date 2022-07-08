@@ -1,0 +1,218 @@
+@import "../abstract/variaveis";
+
+#what-we-do {
+  // margin-top: 67px;
+  width: 100%;
+
+  background: linear-gradient($whiteGradientFirst, $whiteGradientLast);
+  .line-background-first {
+    background-image: url("../../images/line-3.svg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-position-x: 114px;
+    .line-background-last {
+      background-image: url("../../images/line-4.svg");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 90%;
+
+      .header-content {
+        position: relative;
+        width: 100%;
+        padding-top: 152px;
+        .top-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 24px;
+          .section-name {
+            display: flex;
+            margin-left: 136px;
+            position: absolute;
+            font-size: 18px;
+            color: $primaryColor;
+            .number {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+      .main-header {
+        padding-left: 136px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        h2 {
+          font-size: 64px;
+          color: $darkColor;
+          width: 75%;
+        }
+        .pagination {
+          display: flex;
+          z-index: 200;
+          align-items: center;
+          button {
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            img {
+              width: 100%;
+            }
+          }
+          .left-arrow {
+            img {
+              transform: rotate(90deg);
+            }
+          }
+          .right-arrow {
+            img {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+      .main-content {
+        display: flex;
+        margin: 96px 0;
+        position: relative;
+        align-items: center;
+        height: 560px;
+        border-radius: 48px;
+        .blue {
+          background-color: $primaryColor;
+          height: 560px;
+          border-radius: 48px;
+          p {
+            color: $textColor100;
+          }
+        }
+        // div:hover{
+        //   background-color: $primaryColor;
+        //   height: 560px;
+        //   border-radius: 48px;
+        //   p{
+        //     color: $textColor100;
+        //   }
+        // }
+        div {
+          width: 293px;
+          height: 480px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: $lightColor;
+          justify-content: center;
+          padding: 140px 0;
+          img {
+            width: 35%;
+            margin-bottom: 40px;
+          }
+          p {
+            color: $primaryColor;
+            font-size: 24px;
+            font-weight: bold;
+          }
+        }
+        div:first-child {
+          border-top-left-radius: 48px;
+          border-bottom-left-radius: 48px;
+        }
+        div:last-child {
+          border-top-right-radius: 48px;
+          border-bottom-right-radius: 48px;
+        }
+      }
+      .achievement-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 150px;
+        .achievement-left-content {
+          width: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .achievement-image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .image-circle {
+              background-color: $accentColorPink;
+              width: 450px;
+              height: 450px;
+              position: absolute;
+              border-radius: 50%;
+            }
+            img {
+              width: 100%;
+              z-index: 900;
+              margin-left: 90px;
+              padding-bottom: 35px;
+            }
+          }
+          .achievement-slide{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            img{
+              padding: 0 12px
+            }
+          }
+        }
+        .achievement-right-content {
+          width: 52%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .achievement-header-content {
+            .achievement-top-header {
+              display: flex;
+              align-items: center;
+              margin-bottom: 40px;
+              .achievement-mini-logo {
+                margin-right: 75px;
+              }
+              .achievement-section-name {
+                color: $darkColor;
+                font-weight: 600;
+                font-size: 18px;
+                display: flex;
+                .achievement-number {
+                  color: $textColor500;
+                  margin-right: 24px;
+                }
+              }
+            }
+            .achievement-main-header {
+              padding-left: 0;
+              padding-right: 135px;
+              h6 {
+                font-size: 32px;
+                font-weight: bold;
+              }
+            }
+          }
+          .achievement-main-content {
+            display: flex;
+            flex-direction: column;
+            .achievement-main-content-number {
+              font-size: 200px;
+              color: $primaryColor;
+              font-weight: 600;
+              margin-top: 90px;
+            }
+            .achievement-main-content-text {
+              font-size: 24px;
+              font-weight: bold;
+              color: $textColor900;
+            }
+          }
+        }
+      }
+    }
+  }
+}
