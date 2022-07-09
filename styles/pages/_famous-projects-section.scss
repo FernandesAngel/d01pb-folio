@@ -7,13 +7,18 @@
   .projects-background-line-top {
     background-image: url("../../images/line-5.svg");
     background-repeat: no-repeat;
-    background-position-y: 300%;
+    background-position-y: 30%;
     .projects-background-line-bottom {
+      background-image: url("../../images/line-6.svg");
+      background-repeat: no-repeat;
+      background-position-x: 99%;
+      background-position-y: 64%;
       .projects-background-woman-image {
         background-image: url("../../images/female-background.png");
         background-repeat: no-repeat;
-        background-position-y: 200%;
-        background-position-x: 96%;
+        background-position-y: 7%;
+        background-position-x: 94%;
+        background-size: 40%;
         .projects-header-content {
           .projects-top-header {
             display: flex;
@@ -267,7 +272,7 @@
               .sapiens-content {
                 width: 50%;
                 margin-right: 135px;
-                p{
+                p {
                   width: 100%;
                 }
                 .project-image {

@@ -1,0 +1,90 @@
+@import "../abstract/variaveis";
+
+#footer-cta {
+  .footer-cta-content-wrapper {
+    max-width: 1296px;
+    margin: 0 auto;
+    .footer-cta-content {
+      display: flex;
+      flex-direction: column;
+      background-color: $primaryColor;
+      border-radius: 40px;
+      background-image: url("../../images/line-8.svg");
+      background-repeat: no-repeat;
+      background-position-x: 11%;
+
+      .footer-cta-content-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 130px 0;
+        img {
+        }
+        p {
+          margin: 40px 0;
+          font-size: 18px;
+          font-weight: 600;
+          color: $textColor100;
+        }
+        h6 {
+          color: $textColor100;
+          font-weight: 700;
+          font-size: 32px;
+          text-align: center;
+          line-height: 40px;
+          width: 48%;
+        }
+      }
+      .footer-cta-content-bottom {
+        display: flex;
+        flex-direction: row;
+        .footer-cta-content-bottom-left {
+          width: 50%;
+          border-top: 1px solid #7686ec;
+          border-right: 1px solid #7686ec;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 120px 0;
+          h5 {
+            font-size: 64px;
+            color: $textColor100;
+            line-height: 72px;
+            font-weight: bold;
+            width: 60%;
+          }
+        }
+        .footer-cta-content-bottom-right {
+          width: 50%;
+          border-top: 1px solid #7686ec;
+          padding: 120px 0 0 115px;
+          display: flex;
+          flex-direction: column;
+
+          .footer-cta-content-bottom-right-image {
+            width: 100px;
+            img {
+              width: 100%;
+            }
+          }
+          .footer-cta-content-bottom-right-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h6 {
+              color: $textColor100;
+              font-size: 32px;
+              line-height: 40px;
+              font-weight: 700;
+              width: 70%;
+              margin-top: 30px;
+            }
+            img {
+              width: 64px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
