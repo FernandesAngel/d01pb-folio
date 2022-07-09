@@ -1,0 +1,305 @@
+@import "../abstract/variaveis";
+
+#famous-projects {
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 400px;
+  .projects-background-line-top {
+    background-image: url("../../images/line-5.svg");
+    background-repeat: no-repeat;
+    background-position-y: 300%;
+    .projects-background-line-bottom {
+      .projects-background-woman-image {
+        background-image: url("../../images/female-background.png");
+        background-repeat: no-repeat;
+        background-position-y: 200%;
+        background-position-x: 96%;
+        .projects-header-content {
+          .projects-top-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            .projects-section-name {
+              display: flex;
+              margin-left: 136px;
+              position: absolute;
+              font-size: 18px;
+              color: $primaryColor;
+              font-weight: 600;
+              .projects-number {
+                margin-right: 24px;
+              }
+            }
+          }
+          .projects-main-header {
+            padding-left: 136px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            h2 {
+              font-size: 84px;
+              color: $darkColor;
+              width: 75%;
+            }
+          }
+          .projects-description {
+            padding-left: 136px;
+            width: 55%;
+            font-size: 18px;
+            color: $textColor600;
+            font-weight: 400;
+            margin: 40px 0 180px;
+            line-height: 32px;
+          }
+        }
+        .projects-main-content {
+          .projects-main-product {
+            display: flex;
+            position: relative;
+            min-height: 700px;
+            .projects-main-product-title {
+              width: 40%;
+              z-index: 500;
+              .main-project-tag {
+                color: $textColor100;
+                background-color: $accentColorPurpleShade;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                border-radius: 40px;
+                width: 30%;
+              }
+              h6 {
+                font-size: 40px;
+                font-weight: bold;
+                color: $textColor900;
+                line-height: 48px;
+                margin: 24px 0 32px;
+              }
+              p {
+                font-size: 18px;
+                line-height: 32px;
+                color: $textColor600;
+                font-weight: 400;
+                width: 50%;
+              }
+            }
+            .projects-main-product-image {
+              width: 60%;
+              position: absolute;
+              left: 300px;
+              .main-project-background {
+                background-color: $primaryColorShade;
+                position: relative;
+                padding: 0 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 24px;
+                .main-project-image {
+                  img {
+                    width: 100%;
+                  }
+                }
+                button {
+                  position: absolute;
+                  bottom: 32px;
+                  left: 32px;
+                  width: 72px;
+                  height: 72px;
+                  border: 0;
+                  border-radius: 50%;
+                  color: $textColor100;
+                  background-color: $darkColor;
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+                .main-project-arrow-button {
+                  position: absolute;
+                  right: -32px;
+                  top: 100px;
+                  transform: rotate(-90deg);
+                  width: 64px;
+                }
+              }
+            }
+          }
+          .projects-bento-pt1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            .project-card {
+              width: 50%;
+              h6 {
+                color: $darkColor;
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 48px;
+                margin-bottom: 40px;
+              }
+              p {
+                color: $textColor600;
+                line-height: 32px;
+                font-size: 18px;
+                font-weight: 400;
+                width: 65%;
+                margin-top: 40px;
+              }
+            }
+            .vol2 {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              .vol2-content {
+                width: 70%;
+                position: relative;
+                p {
+                  width: 100%;
+                }
+                .project-image {
+                  border-radius: 24px;
+                  width: 100%;
+                  height: 200%;
+                  background-color: $secondaryColorShade;
+                  position: relative;
+                  img {
+                    width: 120%;
+                    position: absolute;
+                    left: -40%;
+                    top: 15%;
+                  }
+                  button {
+                    border: 0;
+                    background: transparent;
+                    position: absolute;
+                    top: 65%;
+                    right: 27px;
+                    img {
+                      width: 54px;
+                      transform: rotate(-90deg);
+                    }
+                  }
+                }
+              }
+            }
+            .d3 {
+              padding-top: 300px;
+              .project-image {
+                width: 80%;
+                background-color: $accentColorOrangeShade;
+                padding: 65px 85px 65px 55px;
+                border-radius: 24px;
+                position: relative;
+                img {
+                  width: 100%;
+                }
+                button {
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: 75%;
+                  right: -27px;
+                  img {
+                    width: 54px;
+                    transform: rotate(-90deg);
+                  }
+                }
+              }
+            }
+          }
+          .projects-bento-pt2 {
+            width: 100%;
+            display: flex;
+
+            flex-direction: row-reverse;
+            .project-card {
+              width: 50%;
+              h6 {
+                color: $darkColor;
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 48px;
+                margin-bottom: 40px;
+              }
+              p {
+                color: $textColor600;
+                line-height: 32px;
+                font-size: 18px;
+                font-weight: 400;
+                width: 65%;
+                margin-top: 40px;
+              }
+            }
+            .vol3 {
+              .project-image {
+                width: 80%;
+                background-color: $primaryColorShade;
+                padding: 65px 85px 65px 55px;
+                border-radius: 24px;
+                position: relative;
+                img {
+                  width: 100%;
+                }
+                button {
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: 75%;
+                  right: -27px;
+                  img {
+                    width: 54px;
+                    transform: rotate(-90deg);
+                  }
+                }
+              }
+            }
+            .sapiens {
+              padding-top: 370px;
+              display: flex;
+              align-items: flex-end;
+              flex-direction: column;
+              .sapiens-content {
+                width: 50%;
+                margin-right: 135px;
+                p{
+                  width: 100%;
+                }
+                .project-image {
+                  width: 100%;
+                  display: flex;
+                  align-items: flex-start;
+                  background-color: $accentColorPinkShade;
+                  padding: 0 20px 0 20px;
+                  border-radius: 24px;
+                  position: relative;
+                  img {
+                    margin-top: 45%;
+                    margin-bottom: 30%;
+                    width: 100%;
+                  }
+                  button {
+                    border: 0;
+                    background: transparent;
+                    position: absolute;
+                    top: 70%;
+                    right: -27px;
+                    img {
+                      width: 54px;
+                      transform: rotate(-90deg);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
