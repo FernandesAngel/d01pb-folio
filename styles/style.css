@@ -22,9 +22,30 @@ body {
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .main-button {
+    width: 118px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
 .content-wrapper {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    max-width: 844px;
+  }
+}
+
+@media (max-width: 940px) {
+  .content-wrapper {
+    max-width: 660px;
+  }
 }
 
 body {
@@ -105,7 +126,7 @@ nav .contact-us-button button {
 
 /*Hero Section Content*/
 .hero-section-content {
-  margin: 80px 0;
+  margin: 90px 0;
 }
 
 .hero-section-content .main-content {
@@ -151,16 +172,15 @@ nav .contact-us-button button {
 
 .hero-section-content .main-content .content-right {
   width: 60%;
-  margin-right: 70px;
   position: relative;
 }
 
 .hero-section-content .main-content .content-right .content-right-image {
   z-index: 2;
   position: relative;
-  width: 100%;
+  width: 110%;
   margin-top: 70px;
-  margin-left: -100px;
+  margin-left: -170px;
 }
 
 .hero-section-content .main-content .content-right .content-right-image img {
@@ -192,6 +212,113 @@ nav .contact-us-button button {
   right: 30px;
   border-radius: 30px;
   border-top-left-radius: 60px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: 50%;
+    background-position-y: 0px;
+  }
+  /* Menu */
+  nav {
+    padding: 32px 50px;
+  }
+  nav .menu ul li {
+    margin: 0 32px;
+    list-style: none;
+  }
+  nav .menu ul li a {
+    font-size: 16px;
+  }
+  nav .contact-us-button {
+    height: 56px;
+  }
+  nav .contact-us-button button {
+    padding: 0 40px;
+    font-size: 16px;
+  }
+  /*Hero Section Content*/
+  .hero-section-content .main-content .content-left h1 {
+    margin-bottom: 24px;
+    font-size: 64px;
+  }
+  .hero-section-content .main-content .content-left p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .hero-section-content .main-content .content-left .scroll-down-button {
+    font-size: 16px;
+    margin-top: 56px;
+  }
+  .hero-section-content .main-content .content-right {
+    width: 60%;
+  }
+  .hero-section-content .main-content .content-right .content-right-image {
+    width: 105%;
+    margin-top: 70px;
+    margin-left: -110px;
+  }
+  .hero-section-content .main-content .content-right .content-right-image img {
+    width: 100%;
+  }
+  .hero-section-content .content-right::before {
+    content: "";
+    width: 42%;
+    height: 515px;
+  }
+  .hero-section-content .content-right::after {
+    content: "";
+    width: 45%;
+    height: 515px;
+  }
+}
+
+@media (max-width: 940px) {
+  body {
+    background-size: 50%;
+    background-position-y: 0px;
+  }
+  /* Menu */
+  nav {
+    padding: 32px 40px;
+  }
+  nav .menu ul li {
+    margin: 0 24px;
+  }
+  nav .contact-us-button {
+    height: 48px;
+  }
+  nav .contact-us-button button {
+    padding: 0 20px;
+  }
+  /*Hero Section Content*/
+  .hero-section-content .main-content .content-left h1 {
+    font-size: 54px;
+  }
+  .hero-section-content .main-content .content-left p {
+    margin-bottom: 32px;
+    margin-right: 16px;
+  }
+  .hero-section-content .main-content .content-left .scroll-down-button {
+    margin-top: 48px;
+  }
+  .hero-section-content .main-content .content-right {
+    width: 60%;
+  }
+  .hero-section-content .main-content .content-right .content-right-image {
+    margin-top: 80px;
+    margin-left: -80px;
+  }
+  .hero-section-content .content-right::before {
+    content: "";
+    width: 45%;
+    height: 460px;
+  }
+  .hero-section-content .content-right::after {
+    content: "";
+    width: 53%;
+    height: 460px;
+  }
 }
 
 #who-we-are {
@@ -345,8 +472,8 @@ nav .contact-us-button button {
 
 #who-we-are .main-content .main-years .li-2020 div img {
   position: absolute;
-  left: 201px;
   z-index: 500;
+  left: 15%;
 }
 
 #who-we-are .main-content .main-image {
@@ -441,6 +568,142 @@ nav .contact-us-button button {
   right: 0;
   top: -35px;
   border-top-left-radius: 30px;
+}
+
+@media (max-width: 1200px) {
+  #who-we-are {
+    background-position: initial;
+    padding: 92px 0;
+  }
+  #who-we-are .header-content {
+    margin-top: 0px;
+  }
+  #who-we-are .header-content .top-header .section-name {
+    margin-left: 117px;
+    font-size: 16px;
+  }
+  #who-we-are .main-header {
+    padding-left: 117px;
+  }
+  #who-we-are .main-header h2 {
+    font-size: 48px;
+  }
+  #who-we-are .main-content {
+    margin-top: 80px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #who-we-are .main-content .main-years {
+    margin-top: 40px;
+  }
+  #who-we-are .main-content .main-years ul li {
+    font-size: 12px;
+    margin-bottom: 74px;
+  }
+  #who-we-are .main-content .main-years .li-2020 div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #who-we-are .main-content .main-years .li-2020 div div {
+    width: 17px;
+    left: 34px;
+  }
+  #who-we-are .main-content .main-years .li-2020 div img {
+    width: 15%;
+    left: 16%;
+  }
+  #who-we-are .main-content .main-image {
+    width: 690px;
+  }
+  #who-we-are .final-content .line {
+    height: 56px;
+  }
+  #who-we-are .final-content .content {
+    margin: 0 46px 0 117px;
+  }
+  #who-we-are .final-content .content h6 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #who-we-are .final-content .content p {
+    font-size: 16px;
+    margin: 40px 0 32px;
+  }
+  #who-we-are .final-content .side-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 100%;
+  }
+  #who-we-are .final-content .side-content .side-content-number {
+    font-size: 140px;
+  }
+  #who-we-are .final-content .side-content .side-content-text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #who-we-are::before {
+    content: "";
+    width: 320px;
+  }
+  #who-we-are::after {
+    content: "";
+    width: 200px;
+  }
+}
+
+@media (max-width: 940px) {
+  #who-we-are {
+    background-position: initial;
+    padding: 80px 0;
+  }
+  #who-we-are .header-content .top-header .section-name {
+    margin-left: 117px;
+    font-size: 16px;
+  }
+  #who-we-are .main-header {
+    padding-left: 100px;
+  }
+  #who-we-are .main-content {
+    margin-top: 110px;
+  }
+  #who-we-are .main-content .main-years {
+    margin-top: 20px;
+  }
+  #who-we-are .main-content .main-years ul li {
+    font-size: 12px;
+    margin-bottom: 60px;
+  }
+  #who-we-are .main-content .main-years .li-2020 div div {
+    width: 17px;
+    left: 34px;
+  }
+  #who-we-are .main-content .main-years .li-2020 div img {
+    width: 15%;
+    left: 20%;
+  }
+  #who-we-are .main-content .main-image {
+    width: 540px;
+  }
+  #who-we-are .final-content .content {
+    margin: 0 46px 0 100px;
+  }
+  #who-we-are .final-content .side-content {
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0);
+  }
+  #who-we-are::before {
+    content: "";
+    width: 290px;
+  }
+  #who-we-are::after {
+    content: "";
+    width: 260px;
+  }
 }
 
 #what-we-do {
@@ -584,6 +847,8 @@ nav .contact-us-button button {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 140px 0;
+  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
 }
 
 #what-we-do .line-background-first .line-background-last .main-content div img {
@@ -754,6 +1019,119 @@ nav .contact-us-button button {
   font-size: 24px;
   font-weight: bold;
   color: #000000;
+}
+
+@media (max-width: 1200px) {
+  #what-we-do .line-background-first {
+    background-position-x: 114px;
+  }
+  #what-we-do .line-background-first .line-background-last {
+    background-position-x: 100%;
+    background-position-y: 80%;
+  }
+  #what-we-do .line-background-first .line-background-last .header-content {
+    padding-top: 112px;
+  }
+  #what-we-do .line-background-first .line-background-last .header-content .top-header .section-name {
+    margin-left: 128px;
+    font-size: 16px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-header {
+    padding-left: 128px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-header h2 {
+    font-size: 48px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content {
+    margin: 64px 0;
+    height: 398px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content .blue {
+    height: 398px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div {
+    width: 206px;
+    height: 340px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div img {
+    margin-bottom: 32px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content {
+    margin-top: 130px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content {
+    width: 40%;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content .achievement-image .image-circle {
+    width: 350px;
+    height: 350px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content .achievement-image img {
+    width: 85%;
+    margin-left: 70px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content {
+    width: 52%;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-header-content .achievement-top-header .achievement-section-name {
+    font-size: 16px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-header-content .achievement-main-header {
+    padding-right: 0;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-header-content .achievement-main-header h6 {
+    font-size: 24px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-main-content .achievement-main-content-number {
+    font-size: 140px;
+    margin-top: 80px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-main-content .achievement-main-content-text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 940px) {
+  #what-we-do .line-background-first {
+    background-position-x: 114px;
+  }
+  #what-we-do .line-background-first .line-background-last {
+    background-position-x: 100%;
+    background-position-y: 80%;
+  }
+  #what-we-do .line-background-first .line-background-last .header-content .top-header .section-name {
+    margin-left: 100px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content {
+    margin: 64px 0;
+    height: 368px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content .blue {
+    height: 368px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div {
+    width: 190px;
+    height: 340px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content {
+    width: 40%;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content .achievement-image .image-circle {
+    width: 300px;
+    height: 300px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content .achievement-image img {
+    width: 85%;
+    margin-left: 70px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content {
+    width: 45%;
+  }
 }
 
 #famous-projects {
@@ -1168,6 +1546,238 @@ nav .contact-us-button button {
           transform: rotate(-90deg);
 }
 
+@media (max-width: 1200px) {
+  #famous-projects .projects-background-line-top {
+    background-position-y: 30%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom {
+    background-position-x: 99%;
+    background-position-y: 64%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image {
+    background-position-y: 7%;
+    background-position-x: 94%;
+    background-size: 40%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-top-header .projects-section-name {
+    margin-left: 117px;
+    font-size: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-main-header {
+    padding-left: 117px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-main-header h2 {
+    font-size: 64px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-description {
+    padding-left: 117px;
+    width: 55%;
+    font-size: 16px;
+    margin: 40px 0 75px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product {
+    min-height: 500px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title .main-project-tag {
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 40px;
+    width: 40%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title h6 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 16px 0 24px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title p {
+    font-size: 16px;
+    width: 70%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image {
+    left: 225px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background {
+    padding: 0 40px;
+    border-radius: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-image img {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background button {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-arrow-button {
+    right: -24px;
+    width: 48px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card h6 {
+    font-size: 32px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card p {
+    font-size: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content {
+    width: 70%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image {
+    height: 160%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image img {
+    width: 110%;
+    left: -40%;
+    top: 15%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image button {
+    right: 23px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image button img {
+    width: 45px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 {
+    padding-top: 250px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image {
+    width: 70%;
+    padding: 55px 65px 55px 35px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image img {
+    width: 110%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image button {
+    right: -23px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image button img {
+    width: 45px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card h6 {
+    font-size: 32px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card p {
+    font-size: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image {
+    width: 70%;
+    padding: 50px 65px 50px 35px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image img {
+    width: 110%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image button {
+    right: -23px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image button img {
+    width: 45px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens {
+    padding-top: 250px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content {
+    width: 60%;
+    margin-right: 115px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content .project-image button {
+    top: 70%;
+    right: -23px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content .project-image button img {
+    width: 45px;
+  }
+}
+
+@media (max-width: 940px) {
+  #famous-projects .projects-background-line-top {
+    background-position-y: 30%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom {
+    background-position-x: 99%;
+    background-position-y: 64%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image {
+    background-position-y: 7%;
+    background-position-x: 94%;
+    background-size: 40%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-top-header .projects-section-name {
+    margin-left: 100px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-main-header {
+    padding-left: 100px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-main-header h2 {
+    font-size: 54px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-description {
+    padding-left: 100px;
+    width: 65%;
+    margin: 30px 0 75px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product {
+    min-height: 500px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title .main-project-tag {
+    padding: 10px;
+    border-radius: 40px;
+    width: 50%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title p {
+    font-size: 16px;
+    width: 80%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image {
+    left: 225px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background {
+    padding: 0 40px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-image {
+    width: 120%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content {
+    width: 80%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image {
+    height: 130%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image img {
+    width: 100%;
+    left: -20%;
+    top: 15%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 p {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image {
+    width: 90%;
+    padding: 55px 65px 55px 35px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image img {
+    width: 110%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image button {
+    right: -23px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image button img {
+    width: 45px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 p {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image {
+    width: 80%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens {
+    padding-top: 250px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens p {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content {
+    width: 70%;
+    margin-right: 100px;
+  }
+}
+
 #cta .cta-content-wrapper {
   max-width: 1296px;
   margin: 0 auto;
@@ -1228,6 +1838,28 @@ nav .contact-us-button button {
   padding: 20px 56px;
   font-size: 18px;
   font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  #cta .cta-content-wrapper {
+    max-width: 924px;
+  }
+  #cta .cta-content-wrapper .cta-content {
+    padding: 90px 0;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right .section-name {
+    font-size: 16px;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right h4 {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 24px 0 32px;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 #jobs {
@@ -1326,6 +1958,8 @@ nav .contact-us-button button {
 
 #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header button img {
   margin-right: 16px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 #jobs .jobs-background-line .jobs-content .jobs-right {
@@ -1343,10 +1977,12 @@ nav .contact-us-button button {
   padding: 64px;
   background-color: #ffffff;
   border-radius: 40px;
-  margin-bottom: 20px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 }
 
 #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card .jobs-card-title {
@@ -1430,6 +2066,88 @@ nav .contact-us-button button {
 
 #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right img {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #jobs .jobs-background-line {
+    background-position-x: 40%;
+    background-position-y: 0%;
+    padding-top: 86px;
+    padding-bottom: 89px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left {
+    width: 42%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-top-header .jobs-mini-logo {
+    margin-right: 46px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-top-header .jobs-section-name {
+    font-size: 16px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header {
+    margin-left: 70px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header h2 {
+    font-size: 76px;
+    line-height: 92px;
+    margin: 24px 0 40px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header p {
+    font-size: 16px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header {
+    margin-left: 70px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header button {
+    font-size: 14px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header button img {
+    width: 40px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right {
+    width: 48%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card {
+    padding: 45px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card .jobs-card-title h6 {
+    font-size: 24px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card .jobs-card-title img {
+    margin-left: 15px;
+    width: 24px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card p {
+    margin: 4px 0 15px;
+    font-size: 16px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card .jobs-card-arrow img {
+    width: 90%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 15px 15px 45px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left {
+    width: 75%;
+    margin-right: 5px;
+    padding: 0;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left .jobs-card-arrow {
+    width: 18%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right {
+    width: 55%;
+    padding: 0;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right img {
+    width: 100%;
+  }
 }
 
 #footer-cta .footer-cta-content-wrapper {
@@ -1563,6 +2281,46 @@ nav .contact-us-button button {
   width: 64px;
 }
 
+@media (max-width: 1300px) {
+  #footer-cta .footer-cta-content-wrapper {
+    max-width: 924px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content {
+    border-radius: 30px;
+    background-position-x: 11%;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top {
+    padding: 90px 0;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top p {
+    font-size: 16px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top h6 {
+    font-size: 24px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-left {
+    padding: 85px 0;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-left h5 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right {
+    padding: 85px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-image {
+    width: 75px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-content h6 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-content img {
+    width: 48px;
+  }
+}
+
 footer {
   background-image: url("../../images/line-9.svg");
   background-repeat: no-repeat;
@@ -1591,9 +2349,9 @@ footer .footer-main-content p {
   width: 50%;
   text-align: center;
   font-size: 18px;
-  color: #606060;
+  color: #adadad;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 footer .footer-main-content .menu ul {
@@ -1671,5 +2429,38 @@ footer .footer-bottom .footer-bottom-right a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    background-position-x: 100%;
+  }
+  footer .footer-main-content {
+    padding-top: 100px;
+  }
+  footer .footer-main-content p {
+    margin: 30px 0;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  footer .footer-main-content .menu ul li {
+    margin: 0 32px;
+    list-style: none;
+  }
+  footer .footer-main-content .menu ul li a {
+    font-size: 16px;
+  }
+  footer .footer-bottom {
+    padding: 28px 0;
+  }
+  footer .footer-bottom .footer-bottom-left p {
+    font-size: 12px;
+  }
+  footer .footer-bottom .footer-bottom-right {
+    width: 20%;
+  }
+  footer .footer-bottom .footer-bottom-right a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

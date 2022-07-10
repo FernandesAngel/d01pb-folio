@@ -15,9 +15,9 @@ footer {
       width: 50%;
       text-align: center;
       font-size: 18px;
-      color: $textColor600;
+      color: $textColor400;
       line-height: 32px;
-      font-weight: 400;
+      font-weight: 600;
     }
     .menu {
       ul {
@@ -73,6 +73,45 @@ footer {
         text-decoration: none;
         font-size: 14px;
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    background-position-x: 100%;
+    .footer-main-content {
+      padding-top: 100px;
+      p {
+        margin: 30px 0;
+        font-size: 15px;
+        line-height: 18px;
+      }
+      .menu {
+        ul {
+          li {
+            margin: 0 32px;
+            list-style: none;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 28px 0;
+      .footer-bottom-left {
+        p {
+          font-size: 12px;
+        }
+      }
+      .footer-bottom-right {
+        width: 20%;
+        a {
+          font-size: 12px;
+        }
       }
     }
   }

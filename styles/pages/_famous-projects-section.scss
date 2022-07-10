@@ -308,3 +308,283 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  #famous-projects {
+    .projects-background-line-top {
+      background-position-y: 30%;
+      .projects-background-line-bottom {
+        background-position-x: 99%;
+        background-position-y: 64%;
+        .projects-background-woman-image {
+          background-position-y: 7%;
+          background-position-x: 94%;
+          background-size: 40%;
+          .projects-header-content {
+            .projects-top-header {
+              .projects-section-name {
+                margin-left: 117px;
+                font-size: 16px;
+              }
+            }
+            .projects-main-header {
+              padding-left: 117px;
+              h2 {
+                font-size: 64px;
+              }
+            }
+            .projects-description {
+              padding-left: 117px;
+              width: 55%;
+              font-size: 16px;
+              margin: 40px 0 75px;
+            }
+          }
+          .projects-main-content {
+            .projects-main-product {
+              min-height: 500px;
+              .projects-main-product-title {
+                .main-project-tag {
+                  font-size: 12px;
+                  padding: 10px;
+                  border-radius: 40px;
+                  width: 40%;
+                }
+                h6 {
+                  font-size: 32px;
+                  font-weight: bold;
+                  line-height: 40px;
+                  margin: 16px 0 24px;
+                }
+                p {
+                  font-size: 16px;
+                  width: 70%;
+                }
+              }
+              .projects-main-product-image {
+                left: 225px;
+                .main-project-background {
+                  padding: 0 40px;
+                  border-radius: 16px;
+                  .main-project-image {
+                    img {
+                      width: 100%;
+                    }
+                  }
+                  button {
+                    display: none;
+                  }
+                  .main-project-arrow-button {
+                    right: -24px;
+                    width: 48px;
+                  }
+                }
+              }
+            }
+            .projects-bento-pt1 {
+              .project-card {
+                h6 {
+                  font-size: 32px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+              .vol2 {
+                .vol2-content {
+                  width: 70%;
+                  .project-image {
+                    height: 160%;
+                    img {
+                      width: 110%;
+                      left: -40%;
+                      top: 15%;
+                    }
+                    button {
+                      right: 23px;
+                      img {
+                        width: 45px;
+                      }
+                    }
+                  }
+                }
+              }
+              .d3 {
+                padding-top: 250px;
+                .project-image {
+                  width: 70%;
+                  padding: 55px 65px 55px 35px;
+                  img {
+                    width: 110%;
+                  }
+                  button {
+                    right: -23px;
+                    img {
+                      width: 45px;
+                    }
+                  }
+                }
+              }
+            }
+            .projects-bento-pt2 {
+              .project-card {
+                h6 {
+                  font-size: 32px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+              .vol3 {
+                .project-image {
+                  width: 70%;
+                  padding: 50px 65px 50px 35px;
+                  img {
+                    width: 110%;
+                  }
+                  button {
+                    right: -23px;
+                    img {
+                      width: 45px;
+                    }
+                  }
+                }
+              }
+              .sapiens {
+                padding-top: 250px;
+                .sapiens-content {
+                  width: 60%;
+                  margin-right: 115px;
+                  .project-image {
+                    button {
+                      top: 70%;
+                      right: -23px;
+                      img {
+                        width: 45px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  #famous-projects {
+    .projects-background-line-top {
+      background-position-y: 30%;
+      .projects-background-line-bottom {
+        background-position-x: 99%;
+        background-position-y: 64%;
+        .projects-background-woman-image {
+          background-position-y: 7%;
+          background-position-x: 94%;
+          background-size: 40%;
+          .projects-header-content {
+            .projects-top-header {
+              .projects-section-name {
+                margin-left: 100px;
+              }
+            }
+            .projects-main-header {
+              padding-left: 100px;
+              h2 {
+                font-size: 54px;
+              }
+            }
+            .projects-description {
+              padding-left: 100px;
+              width: 65%;
+              margin: 30px 0 75px;
+            }
+          }
+          .projects-main-content {
+            .projects-main-product {
+              min-height: 500px;
+              .projects-main-product-title {
+                .main-project-tag {
+                  padding: 10px;
+                  border-radius: 40px;
+                  width: 50%;
+                }
+                p {
+                  font-size: 16px;
+                  width: 80%;
+                }
+              }
+              .projects-main-product-image {
+                left: 225px;
+                .main-project-background {
+                  padding: 0 40px;
+                  .main-project-image {
+                    width: 120%;
+                  }
+                }
+              }
+            }
+            .projects-bento-pt1 {
+              .vol2 {
+
+                .vol2-content {
+                  width: 80%;
+
+                  .project-image {
+                    height: 130%;
+                    img {
+                      width: 100%;
+                      left: -20%;
+                      top: 15%;
+                    }
+                  }
+                }
+              }
+              .d3 {
+                p{
+                  width: 100%;
+                }
+                .project-image {
+                  width: 90%;
+                  padding: 55px 65px 55px 35px;
+                  img {
+                    width: 110%;
+                  }
+                  button {
+                    right: -23px;
+                    img {
+                      width: 45px;
+                    }
+                  }
+                }
+              }
+            }
+            .projects-bento-pt2 {
+              .vol3 {
+                p{
+                  width: 100%;
+                }
+                .project-image {
+                  width: 80%;
+                }
+              }
+              .sapiens {
+                p{
+                  width: 100%;
+                }
+                padding-top: 250px;
+                .sapiens-content {
+                  width: 70%;
+                  margin-right: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

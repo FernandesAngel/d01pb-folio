@@ -11,3 +11,12 @@
   color: $textColor100;
   display: block;
 }
+
+@media (max-width: 1200px) {
+  .main-button {
+    width: 118px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

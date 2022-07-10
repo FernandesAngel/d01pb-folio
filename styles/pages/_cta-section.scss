@@ -47,3 +47,29 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  #cta {
+    .cta-content-wrapper {
+      max-width: 924px;
+      .cta-content {
+        padding: 90px 0;
+        .cta-right {
+          .section-name {
+            font-size: 16px;
+          }
+          h4 {
+            font-size: 48px;
+            line-height: 56px;
+            margin: 24px 0 32px;
+          }
+          button {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

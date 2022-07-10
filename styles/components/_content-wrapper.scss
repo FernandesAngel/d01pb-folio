@@ -4,3 +4,26 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+  .content-wrapper{
+    max-width: 844px;
+  }
+}
+
+@media (max-width: 940px) {
+  .content-wrapper{
+    max-width: 660px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-wrapper{
+
+  }
+}
+@media (max-width: 320px) {
+  .content-wrapper{
+
+  }
+}
