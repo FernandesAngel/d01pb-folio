@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 .content-wrapper {
-  max-width: 1170px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
     max-width: 500px;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 580px) {
   .content-wrapper{
     max-width: 372px;
   }

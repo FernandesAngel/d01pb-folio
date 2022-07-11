@@ -116,3 +116,31 @@ footer {
     }
   }
 }
+@media (max-width: 1200px) {
+  footer {
+    background-position-x: 100%;
+    .footer-main-content {
+      padding-top: 100px;
+      p {
+        width: 80%;
+      }
+      .menu {
+        ul {
+          li {
+            margin: 0 32px;
+            list-style: none;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 28px 0;
+      .footer-bottom-right {
+        width: 30%;
+      }
+    }
+  }
+}

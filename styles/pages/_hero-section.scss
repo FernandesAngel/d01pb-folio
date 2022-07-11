@@ -298,38 +298,50 @@ nav {
   /*Hero Section Content*/
   .hero-section-content {
     margin: 0 0 90px;
-    .main-content {
-      display: flex;
-      flex-direction: column;
-      .content-left {
-        width: 90%;
-      }
-
-      .content-right {
+    .content-wrapper {
+      max-width: 100%;
+      width: 100%;
+      .main-content {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin-left: 29%;
-        position: relative;
-        .content-right-image {
-          z-index: 2;
+        .content-left {
+          width: 73%;
+          margin: 0 auto;
+        }
+
+        .content-right {
+          display: flex;
+          width: 100%;
           position: relative;
-          width: 130%;
-          margin-top: 70px;
-          margin-left: -40%;
-          img {
-            width: 100%;
+          margin-bottom: 40px;
+          .content-right-image {
+            z-index: 2;
+            position: relative;
+            width: 85%;
+            margin-top: 70px;
+            margin-left: 5%;
+            img {
+              width: 100%;
+            }
           }
         }
       }
-    }
-    .content-right::before {
-      content: "";
-      width: 46%;
-      height: 600px;
-    }
-    .content-right::after {
-      content: "";
-      width: 47%;
-      height: 600px;
+      .content-right::before {
+        content: "";
+        width: 33%;
+        height: 570px;
+        right: 18%;
+      }
+      .content-right::after {
+        content: "";
+        width: 36%;
+        height: 570px;
+        right: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
     }
   }
 }

@@ -32,7 +32,7 @@ body {
 }
 
 .content-wrapper {
-  max-width: 1170px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ body {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 580px) {
   .content-wrapper {
     max-width: 372px;
   }
@@ -358,7 +358,11 @@ nav .contact-us-button button {
   .hero-section-content {
     margin: 0 0 90px;
   }
-  .hero-section-content .main-content {
+  .hero-section-content .content-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hero-section-content .content-wrapper .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -366,34 +370,44 @@ nav .contact-us-button button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .hero-section-content .main-content .content-left {
-    width: 90%;
-  }
-  .hero-section-content .main-content .content-right {
     width: 100%;
-    margin-left: 29%;
-    position: relative;
   }
-  .hero-section-content .main-content .content-right .content-right-image {
+  .hero-section-content .content-wrapper .main-content .content-left {
+    width: 73%;
+    margin: 0 auto;
+  }
+  .hero-section-content .content-wrapper .main-content .content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .hero-section-content .content-wrapper .main-content .content-right .content-right-image {
     z-index: 2;
     position: relative;
-    width: 130%;
+    width: 85%;
     margin-top: 70px;
-    margin-left: -40%;
+    margin-left: 5%;
   }
-  .hero-section-content .main-content .content-right .content-right-image img {
+  .hero-section-content .content-wrapper .main-content .content-right .content-right-image img {
     width: 100%;
   }
-  .hero-section-content .content-right::before {
+  .hero-section-content .content-wrapper .content-right::before {
     content: "";
-    width: 46%;
-    height: 600px;
+    width: 33%;
+    height: 570px;
+    right: 18%;
   }
-  .hero-section-content .content-right::after {
+  .hero-section-content .content-wrapper .content-right::after {
     content: "";
-    width: 47%;
-    height: 600px;
+    width: 36%;
+    height: 570px;
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
   }
 }
 
@@ -811,27 +825,6 @@ nav .contact-us-button button {
   #who-we-are .main-header h2 {
     width: 100%;
     margin-bottom: 32px;
-  }
-  #who-we-are .main-header .pagination {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 200;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #who-we-are .main-header .pagination button {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-  #who-we-are .main-header .pagination button img {
-    width: 100%;
-  }
-  #who-we-are .main-header .pagination .right-arrow img {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #who-we-are .main-content {
     margin-top: 128px;
@@ -1312,6 +1305,125 @@ nav .contact-us-button button {
   }
 }
 
+@media (max-width: 760px) {
+  #what-we-do .line-background-first {
+    background-image: none;
+  }
+  #what-we-do .line-background-first .line-background-last {
+    background-position-x: 100%;
+    background-position-y: 80%;
+  }
+  #what-we-do .line-background-first .line-background-last .header-content .top-header .mini-logo {
+    display: none;
+  }
+  #what-we-do .line-background-first .line-background-last .header-content .top-header .section-name {
+    margin: 0;
+    color: #5468e7;
+  }
+  #what-we-do .line-background-first .line-background-last .header-content .top-header .section-name .number {
+    margin-right: 24px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-header {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #what-we-do .line-background-first .line-background-last .main-header h2 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 96px 0;
+    position: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 800px;
+    border-radius: 0;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content .blue {
+    background-color: #5468e7;
+    height: 0;
+    border-radius: 32px;
+    height: 190px;
+    padding: 45px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div {
+    width: 100%;
+    height: 190px;
+    padding: 45px;
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 24px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div img {
+    width: 20%;
+    margin-bottom: 0;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div p {
+    width: 60%;
+    margin-left: 25px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div:first-child {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+  #what-we-do .line-background-first .line-background-last .main-content div:last-child {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content {
+    width: 100%;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content .achievement-image .image-circle {
+    width: 350px;
+    height: 350px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-left-content .achievement-image img {
+    width: 60%;
+    margin-left: 80px;
+    padding-bottom: 35px;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content {
+    width: 80%;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-header-content .achievement-top-header .achievement-mini-logo {
+    display: none;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-header-content .achievement-main-header {
+    width: 100%;
+  }
+  #what-we-do .line-background-first .line-background-last .achievement-content .achievement-right-content .achievement-main-content {
+    margin-bottom: 60px;
+  }
+}
+
 #famous-projects {
   width: 100%;
   margin-top: 130px;
@@ -1443,6 +1555,10 @@ nav .contact-us-button button {
   width: 50%;
 }
 
+#famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title .main-project-arrow-button-mobile {
+  display: none;
+}
+
 #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image {
   width: 60%;
   position: absolute;
@@ -1467,6 +1583,10 @@ nav .contact-us-button button {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 24px;
+}
+
+#famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-image-tag {
+  display: none;
 }
 
 #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-image img {
@@ -1509,6 +1629,14 @@ nav .contact-us-button button {
 
 #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card {
   width: 50%;
+}
+
+#famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card .project-card-arrow-button-mobile {
+  display: none;
+}
+
+#famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card .project-card-description-mobile {
+  display: none;
 }
 
 #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card h6 {
@@ -1639,6 +1767,14 @@ nav .contact-us-button button {
   font-weight: 400;
   width: 65%;
   margin-top: 40px;
+}
+
+#famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card .project-card-arrow-button-mobile {
+  display: none;
+}
+
+#famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card .project-card-description-mobile {
+  display: none;
 }
 
 #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image {
@@ -1956,6 +2092,317 @@ nav .contact-us-button button {
   }
 }
 
+@media (max-width: 760px) {
+  #famous-projects .projects-background-line-top {
+    background-image: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom {
+    background-image: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image {
+    background-image: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-top-header img {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-top-header .projects-section-name {
+    margin-left: 0;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-main-header {
+    padding-left: 0;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-main-header button {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-header-content .projects-description {
+    padding-left: 0;
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .main-button {
+    width: 100%;
+    margin-top: 48px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: unset;
+    min-height: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title .main-project-tag {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title .main-project-arrow-button-mobile {
+    display: initial;
+    background: transparent;
+    border: 0;
+    width: 48px;
+    margin-top: 24px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-title .main-project-arrow-button-mobile img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image {
+    width: 100%;
+    position: unset;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background {
+    background-color: #ffba79;
+    position: relative;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-image-tag {
+    color: #ffffff;
+    background-color: #908cff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: 600;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-image img {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-main-product .projects-main-product-image .main-project-background .main-project-arrow-button {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card .project-card-arrow-button-mobile {
+    display: initial;
+    background: transparent;
+    border: 0;
+    width: 48px;
+    margin-top: 24px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card .project-card-arrow-button-mobile img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card .project-card-description-mobile {
+    display: initial;
+    width: 80%;
+    margin-top: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card h6 {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .project-card p {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 {
+    margin-top: 32px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content {
+    width: 100%;
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image {
+    border-radius: 24px;
+    padding: 90px 0;
+    width: 100%;
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image img {
+    width: 80%;
+    position: unset;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .vol2 .vol2-content .project-image button {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 {
+    padding-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image {
+    width: 100%;
+    background-color: #ffce79;
+    padding: 65px 85px 65px 55px;
+    border-radius: 24px;
+    position: unset;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image img {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt1 .d3 .project-image button {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card .project-card-arrow-button-mobile {
+    display: initial;
+    background: transparent;
+    border: 0;
+    width: 48px;
+    margin-top: 24px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card .project-card-arrow-button-mobile img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card .project-card-description-mobile {
+    display: initial;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card .project-card-description-mobile {
+    width: 80%;
+    margin-top: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card h6 {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .project-card p {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 32px;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image {
+    width: 100%;
+    background-color: #d1ecfd;
+    padding: 65px 85px 65px 55px;
+    border-radius: 24px;
+    position: unset;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image img {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .vol3 .project-image button {
+    display: none;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens {
+    padding-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content {
+    width: 100%;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content p {
+    width: 100%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content .project-image {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 100px 0;
+    background-color: #ffba79;
+    position: unset;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content .project-image img {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 70%;
+  }
+  #famous-projects .projects-background-line-top .projects-background-line-bottom .projects-background-woman-image .projects-main-content .projects-bento-pt2 .sapiens .sapiens-content .project-image button {
+    display: none;
+  }
+}
+
 #cta .cta-content-wrapper {
   max-width: 1296px;
   margin: 0 auto;
@@ -2053,6 +2500,24 @@ nav .contact-us-button button {
   }
   #cta .cta-content-wrapper .cta-content .cta-right button {
     padding: 12px 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  #cta .cta-content-wrapper {
+    max-width: 760px;
+  }
+  #cta .cta-content-wrapper .cta-content {
+    padding: 70px 0;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right h4 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 10px 0;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right button {
+    padding: 12px 12px;
+    font-size: 14px;
   }
 }
 
@@ -2384,6 +2849,87 @@ nav .contact-us-button button {
   }
 }
 
+@media (max-width: 760px) {
+  #jobs .jobs-background-line {
+    background-position-x: 40%;
+    background-position-y: 0%;
+  }
+  #jobs .jobs-background-line .jobs-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left {
+    width: 100%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-top-header .jobs-mini-logo {
+    display: none;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header {
+    margin-left: 0;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header p {
+    width: 80%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header {
+    margin-top: 72px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header button {
+    display: none;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right {
+    width: 100%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card .jobs-card-arrow img {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left {
+    width: 60%;
+    padding: 45px 0 45px 45px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left .jobs-card-title h6 {
+    color: #ffffff;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left .jobs-card-arrow {
+    width: 10%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left .jobs-card-arrow img {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right {
+    width: 30%;
+    padding: 20px 20px 20px 0;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right img {
+    width: 100%;
+  }
+}
+
 #footer-cta .footer-cta-content-wrapper {
   max-width: 1296px;
   margin: 0 auto;
@@ -2416,6 +2962,10 @@ nav .contact-us-button button {
       -ms-flex-align: center;
           align-items: center;
   padding: 130px 0;
+}
+
+#footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top .green-chat {
+  display: none;
 }
 
 #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top p {
@@ -2587,6 +3137,65 @@ nav .contact-us-button button {
   }
 }
 
+@media (max-width: 760px) {
+  #footer-cta .footer-cta-content-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 130px 0;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top img {
+    display: none;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top .green-chat {
+    display: initial;
+    width: 15%;
+    margin-left: 8%;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-left {
+    width: 100%;
+    border-top: 1px solid #7686ec;
+    border-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 120px 0;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-left h5 {
+    text-align: center;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right {
+    display: none;
+  }
+}
+
 footer {
   background-image: url("../../images/line-9.svg");
   background-repeat: no-repeat;
@@ -2727,6 +3336,31 @@ footer .footer-bottom .footer-bottom-right a {
   }
   footer .footer-bottom .footer-bottom-right a {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    background-position-x: 100%;
+  }
+  footer .footer-main-content {
+    padding-top: 100px;
+  }
+  footer .footer-main-content p {
+    width: 80%;
+  }
+  footer .footer-main-content .menu ul li {
+    margin: 0 32px;
+    list-style: none;
+  }
+  footer .footer-main-content .menu ul li a {
+    font-size: 16px;
+  }
+  footer .footer-bottom {
+    padding: 28px 0;
+  }
+  footer .footer-bottom .footer-bottom-right {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

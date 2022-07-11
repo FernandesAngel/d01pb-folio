@@ -360,3 +360,120 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  #what-we-do {
+    .line-background-first {
+      background-image: none;
+      .line-background-last {
+        background-position-x: 100%;
+        background-position-y: 80%;
+
+        .header-content {
+          .top-header {
+            .mini-logo{
+              display: none;
+            }
+            .section-name{
+              margin: 0;
+              color: $primaryColor;
+              .number {
+                margin-right: 24px;
+              }
+            }
+          }
+        }
+        .main-header {
+          padding-left: 0;
+          flex-direction: column;
+          h2 {
+            width: 100%;
+            margin-bottom: 32px;
+          }
+          .pagination {
+
+          }
+        }
+        .main-content {
+          display: flex;
+          margin: 96px 0;
+          position: unset;
+          align-items: center;
+          flex-direction: column;
+          min-height: 800px;
+          border-radius: 0;
+
+          .blue {
+            background-color: $primaryColor;
+            height: 0;
+            border-radius: 32px;
+            height: 190px;
+            padding: 45px;
+          }
+          div {
+            width: 100%;
+            height: 190px;
+            padding: 45px;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 32px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            img {
+              width: 20%;
+              margin-bottom: 0;
+            }
+            p{
+              width: 60%;
+              margin-left: 25px;
+            }
+          }
+          div:first-child {
+            border-top-left-radius: 32px;
+            border-bottom-left-radius: 32px;
+          }
+          div:last-child {
+            border-top-right-radius: 32px;
+            border-bottom-right-radius: 32px;
+          }
+        }
+        .achievement-content {
+          flex-direction: column-reverse;
+          .achievement-left-content {
+            width: 100%;
+            .achievement-image {
+              .image-circle {
+                width: 350px;
+                height: 350px;
+              }
+              img {
+                width: 60%;
+                margin-left: 80px;
+                padding-bottom: 35px;
+              }
+            }
+            .achievement-slide {
+            }
+          }
+          .achievement-right-content {
+            width: 80%;
+            .achievement-header-content {
+              .achievement-top-header {
+                .achievement-mini-logo {
+                  display: none;
+                }
+              }
+              .achievement-main-header {
+                width: 100%;
+              }
+            }
+            .achievement-main-content {
+              margin-bottom: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

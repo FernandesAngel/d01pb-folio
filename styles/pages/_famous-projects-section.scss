@@ -93,6 +93,9 @@
                 font-weight: 400;
                 width: 50%;
               }
+              .main-project-arrow-button-mobile{
+                display: none;
+              }
             }
             .projects-main-product-image {
               width: 60%;
@@ -107,6 +110,9 @@
                 justify-content: center;
                 flex-direction: column;
                 border-radius: 24px;
+                .main-project-image-tag {
+                  display: none;
+                }
                 .main-project-image {
                   img {
                     width: 100%;
@@ -141,6 +147,12 @@
             flex-direction: row-reverse;
             .project-card {
               width: 50%;
+              .project-card-arrow-button-mobile{
+                display: none;
+              }
+              .project-card-description-mobile{
+                display: none;
+              }
               h6 {
                 color: $darkColor;
                 font-size: 40px;
@@ -239,6 +251,12 @@
                 font-weight: 400;
                 width: 65%;
                 margin-top: 40px;
+              }
+              .project-card-arrow-button-mobile{
+                display: none;
+              }
+              .project-card-description-mobile{
+                display: none;
               }
             }
             .vol3 {
@@ -529,7 +547,6 @@
             }
             .projects-bento-pt1 {
               .vol2 {
-
                 .vol2-content {
                   width: 80%;
 
@@ -544,7 +561,7 @@
                 }
               }
               .d3 {
-                p{
+                p {
                   width: 100%;
                 }
                 .project-image {
@@ -564,7 +581,7 @@
             }
             .projects-bento-pt2 {
               .vol3 {
-                p{
+                p {
                   width: 100%;
                 }
                 .project-image {
@@ -572,13 +589,272 @@
                 }
               }
               .sapiens {
-                p{
+                p {
                   width: 100%;
                 }
                 padding-top: 250px;
                 .sapiens-content {
                   width: 70%;
                   margin-right: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  #famous-projects {
+    .projects-background-line-top {
+      background-image: none;
+      .projects-background-line-bottom {
+        background-image: none;
+        .projects-background-woman-image {
+          background-image: none;
+          .projects-header-content {
+            .projects-top-header {
+              img {
+                display: none;
+              }
+              .projects-section-name {
+                margin-left: 0;
+              }
+            }
+            .projects-main-header {
+              padding-left: 0;
+              button {
+                display: none;
+              }
+            }
+            .projects-description {
+              padding-left: 0;
+              width: 100%;
+            }
+          }
+          .projects-main-content {
+            .main-button{
+              width: 100%;
+              margin-top: 48px;
+            }
+            .projects-main-product {
+              display: flex;
+              position: unset;
+              min-height: 0;
+              flex-direction: column-reverse;
+              .projects-main-product-title {
+                width: 100%;
+                .main-project-tag {
+                  display: none;
+                }
+                h6 {
+                }
+                p {
+                }
+                .main-project-arrow-button-mobile{
+                  display: initial;
+                  background: transparent;
+                  border: 0;
+                  width: 48px;
+                  margin-top: 24px;
+                  img{
+                    transform: rotate(-90deg);
+                  }
+                }
+              }
+              .projects-main-product-image {
+                width: 100%;
+                position: unset;
+                .main-project-background {
+                  background-color: $accentColorOrange;
+                  position: relative;
+                  .main-project-image-tag {
+                    color: $textColor100;
+                    background-color: $accentColorPurpleShade;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30%;
+                    font-size: 12px;
+                    padding: 10px;
+                    border-radius: 40px;
+                    font-weight: 600;
+                    position: absolute;
+                    left: 24px;
+                    bottom: 24px;
+                  }
+                  .main-project-image {
+                    img {
+                      width: 100%;
+                    }
+                  }
+                  .main-project-arrow-button {
+                    display: none;
+                  }
+                }
+              }
+            }
+            .projects-bento-pt1 {
+              width: 100%;
+              flex-direction: column;
+              .project-card {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .project-card-arrow-button-mobile{
+                  display: initial;
+                  background: transparent;
+                  border: 0;
+                  width: 48px;
+                  margin-top: 24px;
+                  img{
+                    transform: rotate(-90deg);
+                  }
+                }
+                .project-card-description-mobile{
+                  display: initial;
+                  width: 80%;
+                  margin-top: 16px;
+                }
+                h6 {
+                  margin-bottom: 0;
+                  margin-top: 16px;
+                }
+                p {
+                  display: none;
+                }
+              }
+              .vol2 {
+                margin-top: 32px;
+                .vol2-content {
+                  width: 100%;
+                  position: unset;
+                  display: flex;
+                  flex-direction: column-reverse;
+
+                  .project-image {
+                    border-radius: 24px;
+                    padding: 90px 0;
+                    width: 100%;
+                    position: unset;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                      width: 80%;
+                      position: unset;
+                    }
+                    button {
+                      display: none;
+                    }
+                  }
+                }
+              }
+              .d3 {
+                padding-top: 32px;
+                display: flex;
+                flex-direction: column-reverse;
+                .project-image {
+                  width: 100%;
+                  background-color: $accentColorOrangeShade;
+                  padding: 65px 85px 65px 55px;
+                  border-radius: 24px;
+                  position: unset;
+
+                  img {
+                    width: 100%;
+                  }
+                  button{
+                    display: none;
+                  }
+                }
+              }
+            }
+            .projects-bento-pt2 {
+              width: 100%;
+              flex-direction: column;
+              .project-card {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .project-card-arrow-button-mobile{
+                  display: initial;
+                  background: transparent;
+                  border: 0;
+                  width: 48px;
+                  margin-top: 24px;
+                  img{
+                    transform: rotate(-90deg);
+                  }
+                }
+                .project-card-description-mobile{
+                  display: initial;
+                }
+                .project-card-description-mobile {
+                  width: 80%;
+                  margin-top: 16px;
+                }
+                h6 {
+                  margin-bottom: 0;
+                  margin-top: 16px;
+                }
+                p {
+                  display: none;
+                }
+              }
+              .vol3 {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 32px;
+                .project-image {
+                  width: 100%;
+                  background-color: $primaryColorShade;
+                  padding: 65px 85px 65px 55px;
+                  border-radius: 24px;
+                  position: unset;
+                  img {
+                    width: 100%;
+                  }
+                  button{
+                    display: none;
+                  }
+                }
+              }
+              .sapiens {
+                padding-top: 32px;
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                .sapiens-content {
+                  width: 100%;
+                  margin-right: 0;
+                  display: flex;
+                  flex-direction: column-reverse;
+                  p {
+                    width: 100%;
+                  }
+                  .project-image {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 100px 0;
+                    background-color: $accentColorOrange;
+                    position: unset;
+                    img {
+                      margin-top: 0;
+                      margin-bottom: 0;
+                      width: 70%;
+                    }
+                    button{
+                      display: none;
+                    }
+                  }
                 }
               }
             }

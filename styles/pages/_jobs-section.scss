@@ -288,3 +288,82 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  #jobs {
+
+    .jobs-background-line {
+      background-position-x: 40%;
+      background-position-y: 0%;
+      .jobs-content {
+        flex-direction: column;
+        .jobs-left {
+          width: 100%;
+          .jobs-top-header {
+            .jobs-mini-logo {
+              display: none;
+            }
+          }
+          .jobs-main-header {
+            margin-left: 0;
+            p{
+              width: 80%;
+            }
+          }
+          .jobs-button-header {
+
+            margin-top: 72px;
+            button {
+              display: none;
+
+            }
+          }
+        }
+        .jobs-right {
+          width: 100%;
+          .jobs-card {
+            display: flex;
+            flex-direction: column;
+
+            .jobs-card-title {
+            }
+            .jobs-card-arrow {
+              img {
+                transform: rotate(0deg);
+              }
+            }
+          }
+          .visual {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            justify-content: space-between;
+
+            .visual-left {
+              width: 60%;
+              padding: 45px 0 45px 45px;
+              .jobs-card-title {
+                h6 {
+                  color: $textColor100;
+                }
+              }
+              .jobs-card-arrow {
+                width: 10%;
+                img {
+                  transform: rotate(0deg);
+                }
+              }
+            }
+            .visual-right {
+              width: 30%;
+              padding: 20px 20px 20px 0;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

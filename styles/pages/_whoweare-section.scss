@@ -369,22 +369,7 @@
           margin-bottom: 32px;
         }
         .pagination {
-          display: flex;
-          z-index: 200;
-          align-items: center;
-          button {
-            background-color: transparent;
-            border: 0;
-            cursor: pointer;
-            img {
-              width: 100%;
-            }
-          }
-          .right-arrow {
-            img {
-              transform: rotate(-90deg);
-            }
-          }
+
         }
       }
       .main-content {
