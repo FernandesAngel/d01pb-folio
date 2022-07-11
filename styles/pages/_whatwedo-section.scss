@@ -223,6 +223,7 @@
   #what-we-do {
     .line-background-first {
       background-position-x: 114px;
+      background-size: 50%;
       .line-background-last {
         background-position-x: 100%;
         background-position-y: 80%;
@@ -367,7 +368,7 @@
       background-image: none;
       .line-background-last {
         background-position-x: 100%;
-        background-position-y: 80%;
+        background-position-y: 60%;
 
         .header-content {
           .top-header {
@@ -451,6 +452,104 @@
                 width: 60%;
                 margin-left: 80px;
                 padding-bottom: 35px;
+              }
+            }
+            .achievement-slide {
+            }
+          }
+          .achievement-right-content {
+            width: 80%;
+            .achievement-header-content {
+              .achievement-top-header {
+                .achievement-mini-logo {
+                  display: none;
+                }
+              }
+              .achievement-main-header {
+                width: 100%;
+              }
+            }
+            .achievement-main-content {
+              margin-bottom: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  #what-we-do {
+    .line-background-first {
+      .line-background-last {
+        background-position-x: 100%;
+        background-position-y: 80%;
+        .header-content {
+
+        }
+        .main-header {
+          h2 {
+            font-size: 40px;
+          }
+        }
+
+        .achievement-content {
+
+          .achievement-left-content {
+            width: 100%;
+            .achievement-image {
+              .image-circle {
+                width: 290px;
+                height: 290px;
+              }
+              img {
+                margin-left: 60px;
+              }
+            }
+            .achievement-slide {
+            }
+          }
+          .achievement-right-content {
+            width: 80%;
+            .achievement-header-content {
+              .achievement-top-header {
+                .achievement-mini-logo {
+                  display: none;
+                }
+              }
+              .achievement-main-header {
+                width: 100%;
+              }
+            }
+            .achievement-main-content {
+              margin-bottom: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #what-we-do {
+    .line-background-first {
+      .line-background-last {
+        background-position-x: 100%;
+        background-position-y: 45%;
+
+        .achievement-content {
+
+          .achievement-left-content {
+            width: 100%;
+            .achievement-image {
+              .image-circle {
+                width: 240px;
+                height: 240px;
+              }
+              img {
+                margin-left: 40px;
               }
             }
             .achievement-slide {

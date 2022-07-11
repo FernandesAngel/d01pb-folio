@@ -1,0 +1,58 @@
+@import '../abstract/variaveis';
+
+#menu-mobile{
+  background-color: $darkColor;
+  background-image: url('../../images/line-10.png');
+  background-position-x: 100%;
+  background-size: 80%;
+  .menu-mobile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    ul{
+      margin-bottom: 145px;
+      li{
+        list-style: none;
+        margin-bottom: 40px;
+        a{
+          text-decoration: none;
+          color: $textColor100;
+          font-size: 32px;
+          line-height: 40px;
+          font-weight: bold;
+        }
+      }
+    }
+    div{
+      display: flex;
+      div{
+        width: 45px;
+        height: 45px;
+        border: 1px solid #d8d8d8;
+        padding: 15px;
+        border-radius: 50%;
+        margin-right: 45px;
+        img{
+          width: 100%;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .menu-mobile-content{
+    div{
+      display: flex;
+      div{
+
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+
+}
