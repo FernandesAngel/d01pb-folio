@@ -48,6 +48,24 @@ body {
   }
 }
 
+@media (max-width: 760px) {
+  .content-wrapper {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 570px) {
+  .content-wrapper {
+    max-width: 372px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content-wrapper {
+    max-width: 300px;
+  }
+}
+
 body {
   background-image: url("../../images/line-1.svg");
   background-repeat: no-repeat;
@@ -318,6 +336,64 @@ nav .contact-us-button button {
     content: "";
     width: 53%;
     height: 460px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    background-position-y: -20px;
+    background-position-x: 230px;
+  }
+  /* Menu */
+  nav {
+    padding: 42px 32px;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .contact-us-button {
+    display: none;
+  }
+  /*Hero Section Content*/
+  .hero-section-content {
+    margin: 0 0 90px;
+  }
+  .hero-section-content .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-section-content .main-content .content-left {
+    width: 90%;
+  }
+  .hero-section-content .main-content .content-right {
+    width: 100%;
+    margin-left: 29%;
+    position: relative;
+  }
+  .hero-section-content .main-content .content-right .content-right-image {
+    z-index: 2;
+    position: relative;
+    width: 130%;
+    margin-top: 70px;
+    margin-left: -40%;
+  }
+  .hero-section-content .main-content .content-right .content-right-image img {
+    width: 100%;
+  }
+  .hero-section-content .content-right::before {
+    content: "";
+    width: 46%;
+    height: 600px;
+  }
+  .hero-section-content .content-right::after {
+    content: "";
+    width: 47%;
+    height: 600px;
   }
 }
 
@@ -702,7 +778,109 @@ nav .contact-us-button button {
   }
   #who-we-are::after {
     content: "";
-    width: 260px;
+    width: 220px;
+  }
+}
+
+@media (max-width: 760px) {
+  #who-we-are {
+    margin-top: 67px;
+    background-image: none;
+    padding: 90px 0;
+  }
+  #who-we-are .header-content {
+    margin-top: 0;
+  }
+  #who-we-are .header-content .top-header {
+    margin-bottom: 24px;
+  }
+  #who-we-are .header-content .top-header .mini-logo {
+    display: none;
+  }
+  #who-we-are .header-content .top-header .section-name {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  #who-we-are .main-header {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #who-we-are .main-header h2 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  #who-we-are .main-header .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 200;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #who-we-are .main-header .pagination button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  #who-we-are .main-header .pagination button img {
+    width: 100%;
+  }
+  #who-we-are .main-header .pagination .right-arrow img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #who-we-are .main-content {
+    margin-top: 128px;
+    position: relative;
+  }
+  #who-we-are .main-content .main-years {
+    display: none;
+  }
+  #who-we-are .main-content .main-image {
+    width: 100%;
+  }
+  #who-we-are .main-content .main-image img {
+    width: 100%;
+    left: 0;
+    z-index: 200;
+  }
+  #who-we-are .final-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 100px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #who-we-are .final-content .line {
+    display: none;
+  }
+  #who-we-are .final-content .content {
+    margin: 0;
+    max-width: 100%;
+  }
+  #who-we-are .final-content .side-content {
+    width: 70%;
+    padding: 15% 0;
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin-top: 55px;
+  }
+  #who-we-are::before {
+    display: none;
+  }
+  #who-we-are::after {
+    display: none;
   }
 }
 
@@ -1862,6 +2040,22 @@ nav .contact-us-button button {
   }
 }
 
+@media (max-width: 940px) {
+  #cta .cta-content-wrapper {
+    max-width: 760px;
+  }
+  #cta .cta-content-wrapper .cta-content {
+    padding: 65px 0;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right h4 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  #cta .cta-content-wrapper .cta-content .cta-right button {
+    padding: 12px 20px;
+  }
+}
+
 #jobs {
   background: -webkit-gradient(linear, left top, left bottom, from(#ede5f0), to(#ffffff));
   background: linear-gradient(#ede5f0, #ffffff);
@@ -1873,7 +2067,6 @@ nav .contact-us-button button {
   background-position-x: 40%;
   background-position-y: 0%;
   padding-top: 135px;
-  padding-bottom: 130px;
   margin-top: 100px;
 }
 
@@ -2073,7 +2266,6 @@ nav .contact-us-button button {
     background-position-x: 40%;
     background-position-y: 0%;
     padding-top: 86px;
-    padding-bottom: 89px;
   }
   #jobs .jobs-background-line .jobs-content .jobs-left {
     width: 42%;
@@ -2147,6 +2339,48 @@ nav .contact-us-button button {
   }
   #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right img {
     width: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  #jobs .jobs-background-line {
+    background-position-x: 40%;
+    background-position-y: 0%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header {
+    margin-left: 70px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header h2 {
+    font-size: 70px;
+    line-height: 92px;
+    margin: 24px 0 40px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-main-header p {
+    font-size: 16px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header {
+    margin-left: 70px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header button {
+    font-size: 14px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-left .jobs-button-header button img {
+    width: 40px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right {
+    width: 48%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .jobs-card .jobs-card-title h6 {
+    font-size: 20px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual {
+    padding: 18px 18px 18px 45px;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-left .jobs-card-arrow {
+    width: 16%;
+  }
+  #jobs .jobs-background-line .jobs-content .jobs-right .visual .visual-right {
+    width: 45%;
   }
 }
 
@@ -2318,6 +2552,38 @@ nav .contact-us-button button {
   }
   #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-content img {
     width: 48px;
+  }
+}
+
+@media (max-width: 940px) {
+  #footer-cta .footer-cta-content-wrapper {
+    max-width: 760px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content {
+    border-radius: 30px;
+    background-position-x: 11%;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-top {
+    padding: 80px 0;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-left {
+    padding: 75px 0;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-left h5 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right {
+    padding: 75px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-image {
+    width: 75px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-content h6 {
+    margin-right: 10px;
+  }
+  #footer-cta .footer-cta-content-wrapper .footer-cta-content .footer-cta-content-bottom .footer-cta-content-bottom-right .footer-cta-content-bottom-right-content img {
+    width: 40px;
   }
 }
 

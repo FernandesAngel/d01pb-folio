@@ -276,3 +276,60 @@ nav {
     }
   }
 }
+
+@media (max-width: 760px) {
+  body {
+    background-position-y: -20px;
+    background-position-x: 230px;
+  }
+
+  /* Menu */
+  nav {
+    padding: 42px 32px;
+
+    .menu {
+      display: none;
+    }
+    .contact-us-button {
+      display: none;
+    }
+  }
+
+  /*Hero Section Content*/
+  .hero-section-content {
+    margin: 0 0 90px;
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      .content-left {
+        width: 90%;
+      }
+
+      .content-right {
+        width: 100%;
+        margin-left: 29%;
+        position: relative;
+        .content-right-image {
+          z-index: 2;
+          position: relative;
+          width: 130%;
+          margin-top: 70px;
+          margin-left: -40%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .content-right::before {
+      content: "";
+      width: 46%;
+      height: 600px;
+    }
+    .content-right::after {
+      content: "";
+      width: 47%;
+      height: 600px;
+    }
+  }
+}

@@ -73,3 +73,23 @@
     }
   }
 }
+
+@media (max-width: 940px) {
+  #cta {
+    .cta-content-wrapper {
+      max-width: 760px;
+      .cta-content {
+        padding: 65px 0;
+        .cta-right {
+          h4 {
+            font-size: 40px;
+            line-height: 44px;
+          }
+          button {
+            padding: 12px 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,13 +17,19 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 760px) {
   .content-wrapper{
-
+    max-width: 500px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 570px) {
   .content-wrapper{
+    max-width: 372px;
+  }
+}
 
+@media (max-width: 375px) {
+  .content-wrapper{
+    max-width: 300px;
   }
 }
